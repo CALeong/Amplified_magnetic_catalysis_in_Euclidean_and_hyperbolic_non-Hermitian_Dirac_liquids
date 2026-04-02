@@ -1,0 +1,12 @@
+These run script templates are dedicated to code for generating the Hamiltonian for a {p, 3} Hyperbolic or
+a Euclidean honeycomb, in the presence of a uniform real magnetic field (included via Peierls substitution)
+and with a given amount of non-Hermiticity (parameterized by alpha_NH, see below).
+Additionally, these scripts also demonstrate how to get the total magnetic flux through these systems for a
+given strength of the magnetic field (parameterized by beta, see below).
+
+General conventions:
+pval and qval are the {p, q} appearing in the Schlafli symbol for hyperbolic lattices
+nval is the number of generations (unlike paper in code we start counting from 1 not 0)
+alpha_NH is the alpha appearing in the NH construction, controlling the strength of the NH
+t is the hopping amplitude (in the corresponding work always set to 1)
+beta is the parameter that controls the strength of the magnetic field (beta * # of plaquettes = total magnetic flux)

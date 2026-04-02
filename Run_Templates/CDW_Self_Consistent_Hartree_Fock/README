@@ -1,0 +1,17 @@
+These run script templates are dedicated to code for running the SCHF calculation associated with
+the mean-field description of the NN Coulomb repulsion, resulting in a CDW order.
+
+General conventions:
+pval and qval are the {p, q} appearing in the Schlafli symbol for hyperbolic lattices
+nval is the number of generations (unlike paper in code we start counting from 1 not 0)
+alpha_NH is the alpha appearing in the NH construction, controlling the strength of the NH
+small_disorder_strength is the small disorder added to stabilize the NH eigensolver
+coulomb_v_value is the V parameter which controls the strength of the NN Coulomb repulsion
+t is the hopping amplitude (in the corresponding work always set to 1)
+beta is the parameter that controls the strength of the magnetic field (beta * # of plaquettes = total magnetic flux)
+
+system_data is the system averaged CDW order parameter results for each V calculated for
+center_data is the center plaquette site averaged CDW order parameter results for each V calculated for
+raw_data is the delta values on each site for each V value calculated for
+the format of raw_data is a 2D array with the first column being the V value associated with each row
+

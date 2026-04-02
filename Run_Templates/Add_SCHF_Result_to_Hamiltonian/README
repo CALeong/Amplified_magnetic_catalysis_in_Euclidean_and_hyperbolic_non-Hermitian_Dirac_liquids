@@ -1,0 +1,15 @@
+These run script templates are dedicated to code for getting the raw delta values from the SCHF
+calculation, forming the mean-field NN Coulomb or onsite Hubbard interaction term, and adding
+it to the NN tight-binding Hamiltonian with real magnetic field, modelled with the inclusion of Peierls phase.
+
+General conventions:
+pval and qval are the {p, q} appearing in the Schlafli symbol for hyperbolic lattices
+nval is the number of generations (unlike paper in code we start counting from 1 not 0)
+alpha_NH is the alpha appearing in the NH construction, controlling the strength of the NH
+raw_data_location is the path to the raw data file containing the delta values
+coulomb_v_value is the V parameter which controls the strength of the NN Coulomb repulsion
+hubbard_u_value is the U parameter which controls the strength of the onsite Hubbard repulsion
+t is the hopping amplitude (in the corresponding work always set to 1)
+beta is the parameter that controls the strength of the magnetic field (beta * # of plaquettes = total magnetic flux)
+hamiltonian_with_schf_result is the NN hopping Hamiltonian with SCHF obatined interaction term added
+
